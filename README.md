@@ -10,8 +10,14 @@ $('.select').customSelect();
 
 我很懒 _(:3」∠)_，感兴趣直接看代码吧，Demo 预览：
 
-![demo](https://raw.githubusercontent.com/youngdze/CustomSelect/master/select.PNG)
+![demo][1]
 
-有想法或 bug？-> [issue](https://github.com/youngdze/CustomSelect/issues/new)
+有想法或 bug？-> [issue][2]
 
-协助改进？ -> [pull request](https://github.com/youngdze/CustomSelect/compare/)
+协助改进？ -> [pull request][3]
+
+
+
+[1]:http://youngdze.u.qiniudn.com/select.PNG?token=Y58yIUzn7uRy09iBJIUXx3B9N7Gxnvl0-f48Dgdi:ivTXV5cC3ugFLx92YxWl-gLpDJI=:eyJTIjoieW91bmdkemUudS5xaW5pdWRuLmNvbS9zZWxlY3QuUE5HIiwiRSI6MTQwNDQ5MDc4NX0=
+[2]:https://github.com/youngdze/CustomSelect/issues/new
+[3]:https://github.com/youngdze/CustomSelect/compare/
