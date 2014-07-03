@@ -1,107 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Select</title>
-		<style>
-			body {
-				background-color: rgba(0,0,0,.5)
-			}
-			.custom-select {
-				width: 220px;
-				margin: 0 auto;
-				vertical-align: middle;
-			}
-			.custom-select::before {
-				content: '\c';
-				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
-			}
-			.selected {
-				position: relative;
-				border: 0;
-				font-family: Roboto;
-				font-weight: 300;
-				font-size: 1.5em;
-				background-color: #fff;
-				color: #1e1e1e;
-				width: 220px;
-				border-radius: 8px 8px 0 0;
-				padding: 10px;
-				word-wrap: break-word;
-			}
-			.selected::after {
-				content: '√';
-				width: 40px;
-				height: 100%;
-				font-size: 40px;
-				position: absolute;
-				top: 0;
-				right: 0;
-				color: red;
-				background-color: #ddd;
-				text-align: center;
-				border-top-right-radius: 8px;
-			}
-			.custom-select-ul {
-				
-			}
-			.custom-select-ul li {
-				border: 0;
-				font-family: Roboto;
-				font-weight: 300;
-				font-size: 1.5em;
-				background-color: rgba(0,0,0,.06);
-				color: #1e1e1e;
-				width: 220px;
-				padding: 10px;
-				word-wrap: break-word;
-				position: relative;
-			}
-			.custom-select-ul li:not(.custom-select-disabled):hover {
-				background-color: lightblue !important;
-			}
-			.custom-select-ul li:nth-child(odd) {
-				background-color: rgba(255, 255, 255, .5);
-			}
-			.custom-select-ul li:nth-child(even) {
-				background-color: #fff;
-			}
-			.custom-select-ul li:last-child {
-				border-radius: 0 0 8px 8px;
-			}
-			.custom-select-disabled {
-
-			}
-			.co-nz {
-				padding-left: 30px !important;
-				width: 200px !important;
-				color: green !important;
-			}
-			.co-nz::before {
-				content: '€';
-				position: absolute;
-				left: 10px;
-				top: 5px;
-				color: green;
-				font-size: 30px;
-			}
-		</style>
-	</head>
-	<body>
-		<select name="domains" id="domains" class="basic">
-			<option value=".com.au" disabled>.com.au</option>
-			<option value=".co.nz" class="co-nz">.co.nz</option>
-			<option value=".com" selected>.com</option>
-			<option value=".net">.net</option>
-			<option value=".org">.org</option>
-		</select>
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Select</title>
+	<link rel="stylesheet" href="css/jquery-select.css">
+</head>
+<body>
+	<select name="domains" id="domains" class="basic">
+		<option value=".com.au" disabled>.com.au</option>
+		<option value=".co.nz" class="co-nz">.co.nz</option>
+		<option value=".com" selected>.com</option>
+		<option value=".net">.net</option>
+		<option value=".org">.org</option>
+	</select>
 		
-		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-		<script src="js/jquery.select.js"></script>
-		<script>
-			$('.basic').customSelect();
-		</script>
-		</body>
-	</html>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="js/jquery.select.js"></script>
+	<script>
+		$('.basic').customSelect();
+	</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/******************************\ 
+  $jQuery Select Custom Style 
+\*******************************/
+
+.custom-select {
+  width: 220px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+    .custom-select::before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: '\c';
+    }
+
+.selected {
+  position: relative;
+  width: 220px;
+  padding: 10px;
+  font-family: Roboto;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #1e1e1e;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+}
+
+    .selected::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      font-size: 40px;
+      color: red;
+      text-align: center;
+      background-color: #ddd;
+      border-top-right-radius: 8px;
+      content: '√';
+    }
+
+.custom-select-ul li {
+  position: relative;
+  width: 220px;
+  padding: 10px;
+  font-family: Roboto;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #1e1e1e;
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.06);
+  border: 0;
+}
+
+    .custom-select-ul li:not(.custom-select-disabled):hover {
+      background-color: lightblue !important;
+    }
+
+    .custom-select-ul li:nth-child(odd) {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .custom-select-ul li:nth-child(even) {
+      background-color: #fff;
+    }
+
+    .custom-select-ul li:last-child {
+      border-radius: 0 0 8px 8px;
+    }
+
+.co-nz {
+  width: 200px !important;
+  padding-left: 30px !important;
+  color: green !important;
+}
+
+    .co-nz::before {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: 30px;
+      color: green;
+      content: '€';
+    }
+
+
+
+
+
+/******************************\ 
+  $Page Style
+\*******************************/
+
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+}
