@@ -1,7 +1,7 @@
 CustomSelect
 ============
 
-一个 jQuery 插件，自定义 HTML select option 样式
+一个 jQuery 插件，自定义 HTML select option 样式，兼容 IE9 及其以上版本和 Chrome 和 Firfox 和 Opera
 
 用法
 ---
