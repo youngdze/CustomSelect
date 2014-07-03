@@ -8,7 +8,9 @@ CustomSelect
 
 $('.select').customSelect();
 
-我很懒 _(:3」∠)_，感兴趣直接看代码吧
+我很懒 _(:3」∠)_，感兴趣直接看代码吧，Demo 预览：
+
+![demo](select.png)
 
 有想法或 bug？-> [issue](https://github.com/youngdze/CustomSelect/issues/new)
 
