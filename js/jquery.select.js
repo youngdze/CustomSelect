@@ -2,8 +2,8 @@
 
     $.fn.customSelect = function() {
 
-        var _this = $(this);
-        var _option = _this.children('option');
+        var _this = $(this),
+            _option = _this.children('option');
 
         var addElement = function() {
             var newElement = document.createElement(arguments[0]);
@@ -13,7 +13,7 @@
             newElement.setAttributeNode(newAttribute);
             newElement.appendChild(newContent);
             return newElement;
-        }
+        };
 
         var selected = function() {
             for (var i = 0; i < _option.length; i++) {
@@ -21,7 +21,7 @@
                     return _option.eq(i).text();
                 }
             }
-        }
+        };
 
         var addLi = function() {
             var list_ul = addElement('ul', '', 'custom-select-ul');
@@ -33,7 +33,7 @@
                 list_ul.appendChild(list_li);
             }
             return list_ul;
-        }
+        };
 
         _this.wrap(addElement('div', '', 'custom-select'));
         _this.parent().append(addElement('div', selected(), 'selected'));
